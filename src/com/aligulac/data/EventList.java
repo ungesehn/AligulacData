@@ -1,15 +1,15 @@
 
 package com.aligulac.data;
 
-import java.util.List;
-
 import com.google.gson.annotations.SerializedName;
 
-public class PlayerList {
+import java.util.List;
+
+public class EventList {
     private Meta meta;
 
     @SerializedName("objects")
-    private List<Player> players;
+    private List<Event> events;
 
     public Meta getMeta() {
         return this.meta;
@@ -19,11 +19,11 @@ public class PlayerList {
         this.meta = meta;
     }
 
-    public List<Player> getPlayers() {
-        return this.players;
+    public List<Event> getEvents() {
+        return this.events;
     }
 
-    public void setPlayers(List<Player> objects) {
-        this.players = objects;
+    public void setEvents(List<Event> objects) {
+        this.events = objects;
     }
 }
