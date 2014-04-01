@@ -7,7 +7,7 @@ public class Event {
     private String category;
     private List<Object> children;
     private String earliest;
-    private List<Object> earnings;
+    private List<Earning> earnings;
     private String fullname;
     private String homepage;
     private Number id;
@@ -47,11 +47,11 @@ public class Event {
         this.earliest = earliest;
     }
 
-    public List<Object> getEarnings() {
+    public List<Earning> getEarnings() {
         return this.earnings;
     }
 
-    public void setEarnings(List<Object> earnings) {
+    public void setEarnings(List<Earning> earnings) {
         this.earnings = earnings;
     }
 
